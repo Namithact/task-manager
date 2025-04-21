@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Namithact/task-manager/static/css/main.6d5e5cac.css",
-    "main.js": "/Namithact/task-manager/static/js/main.b0ecf04a.js",
-    "static/js/453.a53b11f0.chunk.js": "/Namithact/task-manager/static/js/453.a53b11f0.chunk.js",
-    "index.html": "/Namithact/task-manager/index.html",
-    "main.6d5e5cac.css.map": "/Namithact/task-manager/static/css/main.6d5e5cac.css.map",
-    "main.b0ecf04a.js.map": "/Namithact/task-manager/static/js/main.b0ecf04a.js.map",
-    "453.a53b11f0.chunk.js.map": "/Namithact/task-manager/static/js/453.a53b11f0.chunk.js.map"
+    "main.css": "/task-manager/static/css/main.6d5e5cac.css",
+    "main.js": "/task-manager/static/js/main.049840e1.js",
+    "static/js/453.a53b11f0.chunk.js": "/task-manager/static/js/453.a53b11f0.chunk.js",
+    "index.html": "/task-manager/index.html",
+    "main.6d5e5cac.css.map": "/task-manager/static/css/main.6d5e5cac.css.map",
+    "main.049840e1.js.map": "/task-manager/static/js/main.049840e1.js.map",
+    "453.a53b11f0.chunk.js.map": "/task-manager/static/js/453.a53b11f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d5e5cac.css",
-    "static/js/main.b0ecf04a.js"
+    "static/js/main.049840e1.js"
   ]
 }
