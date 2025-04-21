@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function TaskInput({ tasksAdded }) {
+  const [task, setTask] = useState("");
   function addTask() {
     const taskInput = document.querySelector(".task-input");
     tasksAdded(taskInput.value);
     taskInput.value = "";
+    setTask("");
   }
   return (
     <>
@@ -13,8 +15,12 @@ export default function TaskInput({ tasksAdded }) {
           type="text"
           placeholder="Add a new task..."
           className="task-input"
+          value={task}
+          onChange={(e) => {
+            setTask(e.target.value);
+          }}
         />
-        <button className="add-task-button" onClick={addTask}>
+        <button className="add-task-button" disabled={task.trim()===''} onClick={addTask}>
           Add Task
         </button>
       </div>
