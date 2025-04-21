@@ -1,0 +1,214 @@
+.main-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.task-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+.task-input:focus {
+  outline: none;
+  border-color: #121212;
+}
+.task-input::placeholder {
+  color: #ccc;
+}
+.task-input:focus::placeholder {
+  color: #aaa;
+}
+.task-input:disabled {
+  background-color: #f0f0f0;
+  color: #aaa;
+}
+.task-input:disabled::placeholder {
+  color: #aaa;
+}
+.task-input-container {
+  display: flex;
+  margin: 10px;
+}
+.add-task-button {
+  cursor: pointer;
+  margin-left: 2rem;
+  width: 20%;
+  border-radius: 8px;
+  border: 2px solid grey;
+  font-size: smaller;
+}
+.add-task-button:hover {
+  background-color: #121212;
+  color: white;
+  border: 2px solid #121212;
+}
+.task-container {
+  display: flex;
+    justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+.task-info{
+  display: flex
+;
+    align-items: center;
+    gap: 10px;
+}
+.task-info p {
+  margin: 0;
+}
+.checkbox {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  accent-color: #121212;
+}
+.checkbox:checked {
+  background-color: #121212;
+}
+.delete-button {
+  cursor: pointer;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+.delete-button:hover {
+  background-color: #ff4d4d;
+}
+.footer-content{
+  background-color: #222;
+  color: #eee;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto; 
+  margin:10px
+}
+.task-summary {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.task-summary h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.task-actions button {
+  padding: 10px 16px;
+  background-color: black;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.task-actions button:hover {
+  background-color: #282c34;
+}
+/* Dark mode styles */
+.dark {
+  background-color: grey;
+  color: white;
+}
+.dark p{
+  color: black;
+}
+.dark .completed p{
+  color:grey
+}
+.dark input,
+.dark button {
+  background-color: #333;
+  color: white;
+}
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  position: relative;
+  color: white;
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  padding: 10px;
+  margin: 10px;
+}
+.completed {
+  background-color: #f0f0f0; /* light grey */
+  color: grey;
+  text-decoration: line-through;
+}
+.App-link {
+  color: #61dafb;
+}
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+  margin: 5px;
+}
+.toggle-label {
+  margin: 5px;
+}
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  left: 4px;
+  bottom: 4px;
+  transition: 0.4s;
+}
+
+/* When the toggle is checked */
+.toggle-switch input:checked + .slider {
+  background-color: slategrey;
+}
+
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
