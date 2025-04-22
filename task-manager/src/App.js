@@ -32,7 +32,6 @@ function App() {
       return updatedTasks;
     });
 
-    localStorage.setItem("tasks", JSON.stringify(tasks));
   };
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
