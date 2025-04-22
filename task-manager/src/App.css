@@ -38,7 +38,7 @@
 }
 .add-task-button {
   cursor: pointer;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
   width: 20%;
   border-radius: 8px;
   border: 2px solid grey;
@@ -51,29 +51,30 @@
 }
 .add-task-button:disabled {
   background-color: #ccc;
-  color: #888;  
+  color: #888;
   cursor: not-allowed;
+
+  border: 2px solid lightgrey;
 }
 .add-task-button:disabled:hover {
-  background-color: #ccc;  /* same as disabled state */
+  background-color: #ccc; /* same as disabled state */
   color: #888;
   box-shadow: none;
-  border: 2px solid grey;
+  border: 2px solid lightgrey;
 }
 .task-container {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   margin: 10px;
   background-color: #f0f0f0;
   border-radius: 8px;
 }
-.task-info{
-  display: flex
-;
-    align-items: center;
-    gap: 10px;
+.task-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .task-info p {
   margin: 0;
@@ -99,14 +100,14 @@
 .delete-button:hover {
   background-color: #ff4d4d;
 }
-.footer-content{
+.footer-content {
   background-color: #222;
   color: #eee;
   padding: 20px 30px;
   text-align: center;
   font-size: 14px;
-  margin-top: auto; 
-  margin:10px
+  margin-top: auto;
+  margin: 10px;
 }
 .task-summary {
   text-align: center;
@@ -143,16 +144,20 @@
   background-color: grey;
   color: white;
 }
-.dark p{
+.dark .task-item  {
   color: black;
 }
-.dark .completed p{
-  color:grey
+.dark .completed p {
+  color: grey;
 }
 .dark input,
 .dark button {
   background-color: #333;
   color: white;
+}
+.dark.footer-content p {
+  background-color: #444;
+  color: #eee;
 }
 .App-header {
   display: flex;
@@ -223,3 +228,33 @@
   transform: translateX(22px);
 }
 
+.task-date-priority {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid lightgrey;
+  font-size: smaller;
+}
+.task-date-priority:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+@media (max-width: 600px) {
+  .task-input-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+.task-input{
+  width:90%;
+  margin-bottom: 10px;
+}
+.task-date{
+  width:96%
+}
+.task-priority,.add-task-button{
+  width:98%
+}
+.task-date-priority{
+  margin-bottom: 10px;
+}}

@@ -18,11 +18,14 @@ function App() {
       setDarkMode(JSON.parse(storedDarkMode));
     }
   }, []);
-  const addTask = (task) => {
+  const addTask = ({task,date,priority}) => {
     const newItem = {
       name: task,
+      priority: priority,
+      dueDate: date,
       isComplete: false,
     };
+    console.log(newItem);
     setTasks((prevItems) => {
       const updatedTasks = [...prevItems, newItem];
       localStorage.setItem("tasks", JSON.stringify(updatedTasks));
