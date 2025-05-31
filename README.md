@@ -3,7 +3,7 @@
 A simple, responsive, and intuitive task management app built with **React**. Designed as part of my React learning journey,
 this project focuses on essential features like task CRUD operations, priority handling, due dates, dark mode, and persistent storage.
 
-🔗 **Live Demo:** [Explore the App](https://lnkd.in/d-Qz2NHj)
+🔗 **Live Demo:** [Explore the App](https://namithact.github.io/task-manager/)
 
 ---
 
