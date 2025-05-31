@@ -43,7 +43,7 @@ this project focuses on essential features like task CRUD operations, priority h
 To run the app locally:
 
 ```bash
-git clone https://github.com/your-username/task-manager.git
+git clone https://github.com/Namithact/task-manager.git
 cd task-manager
 npm install
 npm start
